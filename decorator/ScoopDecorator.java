@@ -45,7 +45,7 @@ public abstract class ScoopDecorator extends IceCream {
      */
     public String toString() {
         if (numScoops > 1) {
-            return iceCream.toString() + " , "+ numScoops+" scoop of " + this.flavor + " ice cream";
+            return iceCream.toString() + " , "+ numScoops+" scoops of " + this.flavor + " ice cream";
         } else {
             return iceCream.toString() + " , a scoop of " + this.flavor + " ice cream";
         }
