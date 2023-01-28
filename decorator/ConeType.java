@@ -1,5 +1,10 @@
 package decorator;
 
+/**
+ * A enumeration of types of Cones
+ * @author Kelly Finnegan
+ * 
+ */
 public enum ConeType {
     SUGAR_CONE,
     WAFFLE_CONE,
