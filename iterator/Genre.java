@@ -1,5 +1,10 @@
 package iterator;
 
+/**
+ * An enum Genre that holds the possible genres
+ * @author Kelly Finnegan
+ * 
+ */
 public enum Genre {
     Rock,
     Pop,
