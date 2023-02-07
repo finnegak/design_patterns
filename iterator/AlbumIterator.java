@@ -25,11 +25,14 @@ public class AlbumIterator implements Iterator {
      * @return true if more songs are in the song array
      */
     public boolean hasNext() {
+        /* 
         if(position >= song.length || song[position] == null) {
 			return false;
 		} else {
 			return true;
 		}
+        */
+        return position < song.length && song[position] !=null;
     }
 
     /**
@@ -37,8 +40,12 @@ public class AlbumIterator implements Iterator {
      * @return Song object
      */
     public Song next() {
-		position = position + 1;
-		return song[position-1];
+        if (!hasNext()) {
+            return null;
+        }
+        Song nextSong = song[position];
+        position = position + 1;
+        return nextSong;
     }
 
 }
