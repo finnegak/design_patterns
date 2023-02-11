@@ -25,13 +25,6 @@ public class AlbumIterator implements Iterator {
      * @return true if more songs are in the song array
      */
     public boolean hasNext() {
-        /* 
-        if(position >= song.length || song[position] == null) {
-			return false;
-		} else {
-			return true;
-		}
-        */
         return position < song.length && song[position] !=null;
     }
 
