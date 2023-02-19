@@ -39,13 +39,21 @@ public class JukeBox {
      * @return String tells user if song is playing or if no more songs are left in the queue
      */
     public String playNextSong() {
+        String songName = songQueue.remove();
         if (hasMoreSongs()) {
-            String song = songQueue.peek();
-            songQueue.remove();
-            return "Let's jam to " + song;
+            Song play = null;
+            for(Song song: songs) {
+                if(song.getTitle().equalsIgnoreCase(songName)) {
+                    play = song;
+                }
+            }
+            return "Let's jam to " + play;
         } else {
             return "You need to add songs to the list";
         }
+
+    
+
     }
 
     
