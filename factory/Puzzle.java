@@ -9,19 +9,8 @@ import java.util.ArrayList;
  */
 public abstract class Puzzle {
     
-    /**
-     * instance variable String name holds the name of the puzzle
-     */
     protected String name;
-
-    /**
-     * instance variable String material holds the material of the puzzle
-     */
     protected String material;
-
-    /**
-     * isntance variable String Array List holds the different pieces of the puzzle
-     */
     protected ArrayList<String> pieces = new ArrayList<String>();
 
     /**

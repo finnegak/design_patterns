@@ -38,7 +38,6 @@ public class Album {
 			Count = Count + 1;
 		}
         return added;
-
     }
 
     /**

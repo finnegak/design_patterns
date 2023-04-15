@@ -33,7 +33,6 @@ public class JukeBox {
         return jukeBox;
     }
 
-    
     /** 
      * method that plays the next song in the queue
      * @return String tells user if song is playing or if no more songs are left in the queue
@@ -54,8 +53,6 @@ public class JukeBox {
         }
     }
 
-
-    
     /** 
      * method that checks if a song can be added
      * @param title name of song that is being asked to be added to queue
@@ -71,7 +68,6 @@ public class JukeBox {
         return "Sorry we do not have the song " + title;
     }
 
-    
     /** 
      * method checks if their is another song
      * @return boolean true if another song false if no more songs

@@ -7,24 +7,9 @@ package decorator;
  */
 public abstract class ScoopDecorator extends IceCream {
 
-    /**
-     * instance variable of the object IceCream
-     */
     protected IceCream iceCream;
-
-    /**
-     * instance variable int that holds the number of scoops
-     */
     protected int numScoops;
-
-    /**
-     * instance variable String that holds the flavor of ice cream
-     */
     protected String flavor;
-
-    /**
-     * instance variable double that holds the price of the type of ice cream
-     */
     protected double flavorCost;
 
     /**
@@ -37,8 +22,6 @@ public abstract class ScoopDecorator extends IceCream {
         this.numScoops = numScoops;
     }
 
-    
-    
     /** 
      * method that returns a string of the type and number of scoops in a ice cream
      * @return String description of ice cream
@@ -52,7 +35,6 @@ public abstract class ScoopDecorator extends IceCream {
         
     }
 
-    
     /** 
      * method that calculates and returns the total cost of the ice cream
      * @return double total cost
@@ -60,6 +42,5 @@ public abstract class ScoopDecorator extends IceCream {
     public double getCost() {
         return iceCream.getCost() +(flavorCost*numScoops);
     }
-    
 
 }
